@@ -1,0 +1,115 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 50px;
+  .head-left{
+    display: flex;
+    flex-direction: row;
+    img{
+      width: 40px;
+      background-color: lightblue
+    }
+  }
+
+  .head-right{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    h3{
+      margin: 0 10px;
+    }
+  }
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    align-self: flex-start;
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+}
+
+.finestra{
+  display: none;
+}
+
+.active{
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: calc(50% - 200px);
+  left: calc(50% - 158px);
+  background-color: white;
+  height: 400px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.fade{
+  background: rgba(0,0,0,0.4);
+  z-index: 2;
+  height: 100vh;
+}
+
+.fade:not(.show){
+    opacity: 1;
+}
+
+.close-button{
+
+  float: right;
+  border: none;
+  background-color: red;
+  border-radius: 20px;
+  color: white;
+
+}
+
+.close-button:hover{
+  transform: scale(1.25);
+}
+
+.close-button span{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#subscribe{
+  display: block;
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  border-radius: 20px;
+  width: 100px;
+  margin-left: calc(50% - 50px);
+  margin-bottom: 20px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
