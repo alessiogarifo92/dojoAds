@@ -1,4 +1,4 @@
-##Laravel Ads
+## Laravel Ads
 
 Using Laravel, Vue, html and sass, created a page that save cookies any time you visit it.
 It will show an ad at the first access of the day, and it will be shown again only after 24 hours.
